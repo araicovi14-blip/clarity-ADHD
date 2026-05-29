@@ -1,0 +1,8 @@
+export const JANE_APP_URL = "https://clarityadhd.janeapp.com"
+export const PHONE = "778-655-7766"
+export const EMAIL = "info@clarityadhd.ca"
+export const FAX = "844-310-0183"
+export const INSTAGRAM = "https://www.instagram.com/clarityadhd.ca"
+export const FACEBOOK = "https://www.facebook.com/profile.php?id=61584346585352"
+export const SITE_NAME = "Clarity ADHD Clinic"
+export const SITE_URL = "https://clarityadhd.ca"
