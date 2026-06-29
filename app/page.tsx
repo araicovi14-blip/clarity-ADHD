@@ -26,20 +26,20 @@ export default function HomePage() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ───────────────────────────────────────────
    HERO
-───────────────────────────────────────── */
+─────────────────────────────────────────── */
 function HeroSection() {
   return (
-    <section className="min-h-[92vh] bg-[#FAFAF8] flex items-center pt-16 md:pt-20">
+    <section className="min-h-[92vh] bg-[#FAF7F2] flex items-center pt-16 md:pt-20">
       <div className="max-w-7xl mx-auto px-6 md:px-10 w-full grid md:grid-cols-2 gap-12 md:gap-16 items-center py-20 md:py-28">
         {/* Text */}
         <div>
           <p
-            className="font-serif text-2xl text-[#B8E0F7] mb-5 opacity-0"
+            className="font-sans font-bold tracking-wider text-3xl md:text-4xl text-[#B8E0F7] mb-6 opacity-0"
             style={{ animation: "fadeInUp 0.8s ease-out 0s forwards" }}
           >
-            Clarity <span className="text-[#B8E0F7]">ADHD</span>
+            Clarity ADHD
           </p>
           <h1
             className="font-serif text-4xl md:text-5xl lg:text-[3.4rem] text-[#1A1A1A] leading-[1.15] mb-6 opacity-0"
@@ -88,9 +88,9 @@ function HeroSection() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ───────────────────────────────────────────
    CONTRAST BAR
-───────────────────────────────────────── */
+─────────────────────────────────────────── */
 function ContrastBar() {
   return (
     <section className="bg-[#F2F2F0] py-16 md:py-20 px-6">
@@ -120,9 +120,9 @@ function ContrastBar() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ───────────────────────────────────────────
    WHO WE HELP
-───────────────────────────────────────── */
+─────────────────────────────────────────── */
 function WhoWeHelp() {
   return (
     <section className="bg-[#F2F2F0] py-20 md:py-28 px-6">
@@ -136,7 +136,7 @@ function WhoWeHelp() {
           <AnimateIn delay={100}>
             <Link
               href="/for-families"
-              className="group block bg-[#FAFAF8] rounded-2xl p-8 md:p-10 hover:shadow-md transition-all duration-300"
+              className="group block bg-[#FAF7F2] rounded-2xl p-8 md:p-10 hover:shadow-md transition-all duration-300"
             >
               <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4 group-hover:text-[#B8E0F7] transition-colors duration-200">
                 Families &amp; Kids
@@ -153,7 +153,7 @@ function WhoWeHelp() {
           <AnimateIn delay={200}>
             <Link
               href="/for-adults"
-              className="group block bg-[#FAFAF8] rounded-2xl p-8 md:p-10 hover:shadow-md transition-all duration-300"
+              className="group block bg-[#FAF7F2] rounded-2xl p-8 md:p-10 hover:shadow-md transition-all duration-300"
             >
               <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4 group-hover:text-[#B8E0F7] transition-colors duration-200">
                 Adults
@@ -173,12 +173,12 @@ function WhoWeHelp() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ───────────────────────────────────────────
    WHY CLARITY
-───────────────────────────────────────── */
+─────────────────────────────────────────── */
 function WhyClarity() {
   return (
-    <section className="bg-[#FAFAF8] py-20 md:py-28 px-6">
+    <section className="bg-[#FAF7F2] py-20 md:py-28 px-6">
       <div className="max-w-2xl mx-auto">
         <AnimateIn>
           <p className="text-xs font-semibold uppercase tracking-widest text-[#6B7280] mb-7">
@@ -203,9 +203,9 @@ function WhyClarity() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ───────────────────────────────────────────
    TESTIMONIALS
-───────────────────────────────────────── */
+─────────────────────────────────────────── */
 const testimonials = [
   {
     quote:
@@ -239,7 +239,7 @@ function TestimonialsSection() {
         <div className="grid md:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
             <AnimateIn key={t.name} delay={i * 110}>
-              <blockquote className="bg-[#FAFAF8] rounded-2xl p-8 h-full flex flex-col">
+              <blockquote className="bg-[#FAF7F2] rounded-2xl p-8 h-full flex flex-col">
                 <p className="text-[#1A1A1A] leading-relaxed text-[15px] mb-6 flex-1">
                   &ldquo;{t.quote}&rdquo;
                 </p>
