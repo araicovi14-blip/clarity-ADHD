@@ -52,7 +52,7 @@ export function Nav() {
             <li key={l.href}>
               <Link
                 href={l.href}
-                className="text-sm text-[#6B7280] hover:text-[#2C5F6F] transition-colors duration-200"
+                className="text-sm text-[#6B7280] hover:text-[#B8E0F7] transition-colors duration-200"
               >
                 {l.label}
               </Link>
@@ -65,14 +65,14 @@ export function Nav() {
           href={JANE_APP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-block px-5 py-2.5 rounded-full bg-[#2C5F6F] text-white text-sm font-medium hover:bg-[#2C5F6F]/90 transition-colors duration-200"
+          className="hidden md:inline-block px-5 py-2.5 rounded-full bg-[#B8E0F7] text-white text-sm font-medium hover:bg-[#B8E0F7]/90 transition-colors duration-200"
         >
           Book Now
         </a>
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 text-[#1A1A1A] focus:outline-none focus:ring-2 focus:ring-[#2C5F6F] rounded-md"
+          className="md:hidden p-2 text-[#1A1A1A] focus:outline-none focus:ring-2 focus:ring-[#B8E0F7] rounded-md"
           onClick={() => setOpen(!open)}
           aria-expanded={open}
           aria-controls="mobile-menu"
@@ -100,7 +100,7 @@ export function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className="block text-base text-[#6B7280] hover:text-[#2C5F6F] transition-colors duration-200"
+              className="block text-base text-[#6B7280] hover:text-[#B8E0F7] transition-colors duration-200"
               onClick={() => setOpen(false)}
             >
               {l.label}
@@ -110,7 +110,7 @@ export function Nav() {
             href={JANE_APP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-2 text-center px-5 py-3 rounded-full bg-[#2C5F6F] text-white text-sm font-medium"
+            className="block mt-2 text-center px-5 py-3 rounded-full bg-[#B8E0F7] text-white text-sm font-medium"
             onClick={() => setOpen(false)}
           >
             Book Now
