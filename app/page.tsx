@@ -36,10 +36,10 @@ function HeroSection() {
         {/* Text */}
         <div>
           <p
-            className="font-serif text-2xl text-[#2C5F6F] mb-5 opacity-0"
+            className="font-serif text-2xl text-[#B8E0F7] mb-5 opacity-0"
             style={{ animation: "fadeInUp 0.8s ease-out 0s forwards" }}
           >
-            Clarity <span className="text-[#A8D0E0]">ADHD</span>
+            Clarity <span className="text-[#B8E0F7]">ADHD</span>
           </p>
           <h1
             className="font-serif text-4xl md:text-5xl lg:text-[3.4rem] text-[#1A1A1A] leading-[1.15] mb-6 opacity-0"
@@ -63,7 +63,7 @@ function HeroSection() {
               href={JANE_APP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 rounded-full bg-[#2C5F6F] text-white text-sm font-medium hover:bg-[#2C5F6F]/90 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#2C5F6F] focus:ring-offset-2"
+              className="inline-block px-8 py-4 rounded-full bg-[#B8E0F7] text-white text-sm font-medium hover:bg-[#B8E0F7]/90 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#B8E0F7] focus:ring-offset-2"
             >
               Book Your Assessment
             </a>
@@ -74,13 +74,13 @@ function HeroSection() {
         <div className="hidden md:block">
           {/* TODO: replace with real photo of Tatjana */}
           <div
-            className="aspect-[4/5] rounded-3xl bg-[#A8D0E0]/25 w-full max-w-md ml-auto opacity-0 overflow-hidden relative"
+            className="aspect-[4/5] rounded-3xl bg-[#B8E0F7]/25 w-full max-w-md ml-auto opacity-0 overflow-hidden relative"
             style={{ animation: "fadeIn 1s ease-out 0.5s forwards" }}
             role="img"
             aria-label="Photo of Tatjana Dunat, Nurse Practitioner and founder of Clarity ADHD"
           >
             {/* subtle inner texture */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#A8D0E0]/20 to-[#2C5F6F]/10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#B8E0F7]/20 to-[#B8E0F7]/10" />
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@ function ContrastBar() {
         </AnimateIn>
         <AnimateIn delay={160}>
           <div className="pl-4 md:pl-0">
-            <p className="font-serif text-4xl md:text-5xl text-[#2C5F6F] mb-3">
+            <p className="font-serif text-4xl md:text-5xl text-[#B8E0F7] mb-3">
               Within a week
             </p>
             <p className="text-xs md:text-sm text-[#6B7280] leading-relaxed max-w-[160px] mx-auto">
@@ -138,14 +138,14 @@ function WhoWeHelp() {
               href="/for-families"
               className="group block bg-[#FAFAF8] rounded-2xl p-8 md:p-10 hover:shadow-md transition-all duration-300"
             >
-              <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4 group-hover:text-[#2C5F6F] transition-colors duration-200">
+              <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4 group-hover:text-[#B8E0F7] transition-colors duration-200">
                 Families &amp; Kids
               </h3>
               <p className="text-[#6B7280] leading-relaxed text-[15px]">
                 From toddlers to teens, we understand how ADHD shows up at
                 every age. And we know how to talk to the whole family.
               </p>
-              <span className="inline-block mt-7 text-sm text-[#2C5F6F] font-medium">
+              <span className="inline-block mt-7 text-sm text-[#B8E0F7] font-medium">
                 Learn more →
               </span>
             </Link>
@@ -155,14 +155,14 @@ function WhoWeHelp() {
               href="/for-adults"
               className="group block bg-[#FAFAF8] rounded-2xl p-8 md:p-10 hover:shadow-md transition-all duration-300"
             >
-              <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4 group-hover:text-[#2C5F6F] transition-colors duration-200">
+              <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4 group-hover:text-[#B8E0F7] transition-colors duration-200">
                 Adults
               </h3>
               <p className="text-[#6B7280] leading-relaxed text-[15px]">
                 You&apos;ve probably been explaining yourself for years. You
                 shouldn&apos;t have to anymore.
               </p>
-              <span className="inline-block mt-7 text-sm text-[#2C5F6F] font-medium">
+              <span className="inline-block mt-7 text-sm text-[#B8E0F7] font-medium">
                 Learn more →
               </span>
             </Link>
@@ -193,7 +193,7 @@ function WhyClarity() {
           </p>
           <Link
             href="/our-story"
-            className="text-sm text-[#2C5F6F] font-medium hover:underline underline-offset-4"
+            className="text-sm text-[#B8E0F7] font-medium hover:underline underline-offset-4"
           >
             Read her story →
           </Link>
