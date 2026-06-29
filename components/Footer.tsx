@@ -36,7 +36,7 @@ export function Footer() {
               href={JANE_APP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-6 px-5 py-2.5 rounded-full bg-[#2C5F6F] text-white text-sm font-medium hover:bg-[#2C5F6F]/90 transition-colors duration-200"
+              className="inline-block mt-6 px-5 py-2.5 rounded-full bg-[#B8E0F7] text-white text-sm font-medium hover:bg-[#B8E0F7]/90 transition-colors duration-200"
             >
               Book Now
             </a>
@@ -52,7 +52,7 @@ export function Footer() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="text-sm text-[#1A1A1A] hover:text-[#2C5F6F] transition-colors duration-200"
+                    className="text-sm text-[#1A1A1A] hover:text-[#B8E0F7] transition-colors duration-200"
                   >
                     {l.label}
                   </Link>
@@ -69,13 +69,13 @@ export function Footer() {
             <div className="space-y-3">
               <a
                 href={`tel:${PHONE}`}
-                className="block text-sm text-[#1A1A1A] hover:text-[#2C5F6F] transition-colors duration-200"
+                className="block text-sm text-[#1A1A1A] hover:text-[#B8E0F7] transition-colors duration-200"
               >
                 {PHONE}
               </a>
               <a
                 href={`mailto:${EMAIL}`}
-                className="block text-sm text-[#1A1A1A] hover:text-[#2C5F6F] transition-colors duration-200"
+                className="block text-sm text-[#1A1A1A] hover:text-[#B8E0F7] transition-colors duration-200"
               >
                 {EMAIL}
               </a>
@@ -91,7 +91,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Follow Clarity ADHD on Instagram"
-                  className="text-[#6B7280] hover:text-[#2C5F6F] transition-colors duration-200"
+                  className="text-[#6B7280] hover:text-[#B8E0F7] transition-colors duration-200"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
@@ -106,7 +106,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Follow Clarity ADHD on Facebook"
-                  className="text-[#6B7280] hover:text-[#2C5F6F] transition-colors duration-200"
+                  className="text-[#6B7280] hover:text-[#B8E0F7] transition-colors duration-200"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
