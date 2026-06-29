@@ -100,7 +100,7 @@ export function HowItWorks() {
                 onClick={() => setTab('adult')}
                 className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-200 ${
                   tab === 'adult'
-                    ? 'bg-[#2C5F6F] text-white shadow-sm'
+                    ? 'bg-[#B8E0F7] text-white shadow-sm'
                     : 'text-[#6B7280] hover:text-[#1A1A1A]'
                 }`}
               >
@@ -112,7 +112,7 @@ export function HowItWorks() {
                 onClick={() => setTab('youth')}
                 className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-200 ${
                   tab === 'youth'
-                    ? 'bg-[#2C5F6F] text-white shadow-sm'
+                    ? 'bg-[#B8E0F7] text-white shadow-sm'
                     : 'text-[#6B7280] hover:text-[#1A1A1A]'
                 }`}
               >
@@ -127,8 +127,8 @@ export function HowItWorks() {
           {steps.map((step, i) => (
             <AnimateIn key={`${tab}-${step.n}`} delay={i * 70}>
               <div className="flex gap-6">
-                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#A8D0E0]/40 flex items-center justify-center mt-0.5">
-                  <span className="text-[#2C5F6F] font-semibold text-sm">{step.n}</span>
+                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#B8E0F7]/40 flex items-center justify-center mt-0.5">
+                  <span className="text-[#B8E0F7] font-semibold text-sm">{step.n}</span>
                 </div>
                 <div>
                   <h3 className="font-serif text-xl text-[#1A1A1A] mb-1.5">{step.title}</h3>
@@ -145,7 +145,7 @@ export function HowItWorks() {
               href={JANE_APP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-7 py-3.5 rounded-full bg-[#2C5F6F] text-white text-sm font-medium hover:bg-[#2C5F6F]/90 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#2C5F6F] focus:ring-offset-2"
+              className="inline-block px-7 py-3.5 rounded-full bg-[#B8E0F7] text-white text-sm font-medium hover:bg-[#B8E0F7]/90 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#B8E0F7] focus:ring-offset-2"
             >
               Book Your Assessment
             </a>
