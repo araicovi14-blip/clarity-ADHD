@@ -37,7 +37,7 @@ function HeroSection() {
       {/* ── Splash: full-viewport centered logo ── */}
       <div className="min-h-screen flex items-center justify-center px-8 pt-20">
         <div
-          className="w-[78vw] md:w-[52vw] max-w-[700px] opacity-0"
+          className="w-[85vw] md:w-[55vw] md:min-w-[400px] max-w-[760px] opacity-0"
           style={{ animation: "fadeIn 1.8s ease-out 0.2s forwards" }}
         >
           <Image
