@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { JANE_APP_URL } from "@/lib/constants";
 import { HowItWorks } from "@/components/HowItWorks";
@@ -31,33 +32,45 @@ export default function HomePage() {
 ─────────────────────────────────────────── */
 function HeroSection() {
   return (
-    <section className="min-h-[92vh] bg-[#FAF7F2] flex items-center pt-16 md:pt-20">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 w-full grid md:grid-cols-2 gap-12 md:gap-16 items-center py-20 md:py-28">
-        {/* Text */}
+    <section className="bg-[#FAF7F2]">
+
+      {/* ── Splash: full-viewport centered logo ── */}
+      <div className="min-h-screen flex items-center justify-center px-8 pt-20">
+        <div
+          className="w-[78vw] md:w-[52vw] max-w-[700px] opacity-0"
+          style={{ animation: "fadeIn 1.8s ease-out 0.2s forwards" }}
+        >
+          <Image
+            src="/images/logo-full.png"
+            alt="Clarity ADHD Clinic"
+            width={1400}
+            height={700}
+            className="w-full h-auto object-contain"
+            priority
+          />
+        </div>
+      </div>
+
+      {/* ── Headline + CTA ── */}
+      <div className="max-w-7xl mx-auto px-6 md:px-10 w-full grid md:grid-cols-2 gap-12 md:gap-16 items-center pb-24 md:pb-32">
         <div>
-          <p
-            className="font-sans font-bold tracking-wider text-3xl md:text-4xl text-[#B8E0F7] mb-6 opacity-0"
-            style={{ animation: "fadeInUp 0.8s ease-out 0s forwards" }}
-          >
-            Clarity ADHD
-          </p>
           <h1
             className="font-serif text-4xl md:text-5xl lg:text-[3.4rem] text-[#1A1A1A] leading-[1.15] mb-6 opacity-0"
-            style={{ animation: "fadeInUp 0.8s ease-out 0.1s forwards" }}
+            style={{ animation: "fadeInUp 0.8s ease-out 0.5s forwards" }}
           >
             For families and individuals in BC who&apos;ve felt dismissed or
             overlooked — Clarity ADHD gives you real answers, fast.
           </h1>
           <p
             className="text-[#6B7280] text-lg leading-relaxed mb-8 max-w-lg opacity-0"
-            style={{ animation: "fadeInUp 0.8s ease-out 0.4s forwards" }}
+            style={{ animation: "fadeInUp 0.8s ease-out 0.75s forwards" }}
           >
             Virtual ADHD assessments for children, youth, and adults across BC.
             No referral. No waitlist. Within a week.
           </p>
           <div
             className="opacity-0"
-            style={{ animation: "fadeInUp 0.8s ease-out 0.65s forwards" }}
+            style={{ animation: "fadeInUp 0.8s ease-out 0.95s forwards" }}
           >
             <a
               href={JANE_APP_URL}
@@ -75,11 +88,10 @@ function HeroSection() {
           {/* TODO: replace with real photo of Tatjana */}
           <div
             className="aspect-[4/5] rounded-3xl bg-[#B8E0F7]/25 w-full max-w-md ml-auto opacity-0 overflow-hidden relative"
-            style={{ animation: "fadeIn 1s ease-out 0.5s forwards" }}
+            style={{ animation: "fadeIn 1s ease-out 0.8s forwards" }}
             role="img"
             aria-label="Photo of Tatjana Dunat, Nurse Practitioner and founder of Clarity ADHD"
           >
-            {/* subtle inner texture */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#B8E0F7]/20 to-[#B8E0F7]/10" />
           </div>
         </div>
