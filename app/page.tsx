@@ -32,70 +32,95 @@ export default function HomePage() {
 ─────────────────────────────────────────── */
 function HeroSection() {
   return (
-    <section className="bg-[#FAF7F2]">
+    <section className="relative min-h-screen bg-[#FAF7F2] overflow-hidden">
 
-      {/* ── Splash: full-viewport centered logo ── */}
-      <div className="min-h-screen flex items-center justify-center px-8 pt-20">
-        <div
-          className="w-[85vw] md:w-[55vw] md:min-w-[400px] max-w-[760px] opacity-0 bg-transparent"
-          style={{ animation: "fadeIn 1.8s ease-out 0.2s forwards" }}
-        >
-          <Image
-            src="/images/logo-full.png"
-            alt="Clarity ADHD Clinic"
-            width={1400}
-            height={700}
-            className="w-full h-auto object-contain mix-blend-multiply"
-            priority
-          />
-        </div>
+      {/* Flower illustration — large, left-bleeding */}
+      <div
+        className="absolute top-0 -left-[18%] md:top-1/2 md:-translate-y-[55%] md:-left-[6%] lg:-left-[4%] pointer-events-none select-none opacity-0"
+        style={{ animation: "fadeIn 2s ease-out 0.1s forwards" }}
+      >
+        <Image
+          src="/images/Logo.png"
+          alt=""
+          width={1024}
+          height={1024}
+          className="w-[340px] md:w-[540px] lg:w-[640px] h-auto mix-blend-multiply"
+          aria-hidden="true"
+          priority
+        />
       </div>
 
-      {/* ── Headline + CTA ── */}
-      <div className="max-w-7xl mx-auto px-6 md:px-10 w-full grid md:grid-cols-2 gap-12 md:gap-16 items-center pb-24 md:pb-32">
-        <div>
+      {/* Content */}
+      <div className="relative z-10 flex flex-col justify-end md:justify-center min-h-screen px-6 md:px-12 pt-24 pb-16 md:py-0">
+        <div className="md:ml-[42%] lg:ml-[45%]">
+
           <h1
-            className="font-serif text-4xl md:text-5xl lg:text-[3.4rem] text-[#1A1A1A] leading-[1.15] mb-6 opacity-0"
-            style={{ animation: "fadeInUp 0.8s ease-out 0.5s forwards" }}
+            className="font-serif text-[clamp(3.5rem,11vw,7rem)] leading-[0.88] tracking-tight text-[#2C5F6F] opacity-0"
+            style={{ animation: "fadeInUp 1s ease-out 0.5s forwards" }}
+          >
+            Clarity
+          </h1>
+
+          <p
+            className="font-sans font-light text-[0.6rem] tracking-[0.52em] uppercase text-[#2C5F6F] mt-3 mb-10 md:mb-14 opacity-0"
+            style={{ animation: "fadeInUp 1s ease-out 0.65s forwards" }}
+          >
+            ADHD Clinic
+          </p>
+
+          <p
+            className="font-serif text-[1.2rem] md:text-[1.35rem] text-[#1A1A1A] leading-[1.5] mb-5 max-w-[420px] opacity-0"
+            style={{ animation: "fadeInUp 0.9s ease-out 0.8s forwards" }}
           >
             For families and individuals in BC who&apos;ve felt dismissed or
-            overlooked — Clarity ADHD gives you real answers, fast.
-          </h1>
+            overlooked — real answers, fast.
+          </p>
+
           <p
-            className="text-[#6B7280] text-lg leading-relaxed mb-8 max-w-lg opacity-0"
-            style={{ animation: "fadeInUp 0.8s ease-out 0.75s forwards" }}
+            className="text-[#6B7280] text-sm leading-relaxed mb-9 max-w-[380px] opacity-0"
+            style={{ animation: "fadeInUp 0.9s ease-out 0.95s forwards" }}
           >
             Virtual ADHD assessments for children, youth, and adults across BC.
             No referral. No waitlist. Within a week.
           </p>
-          <div
-            className="opacity-0"
-            style={{ animation: "fadeInUp 0.8s ease-out 0.95s forwards" }}
-          >
+
+          <div className="opacity-0" style={{ animation: "fadeInUp 0.8s ease-out 1.1s forwards" }}>
             <a
               href={JANE_APP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 rounded-full bg-[#B8E0F7] text-white text-sm font-medium hover:bg-[#B8E0F7]/90 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#B8E0F7] focus:ring-offset-2"
+              className="inline-block px-8 py-4 rounded-full bg-[#2C5F6F] text-[#FAF7F2] text-sm font-medium hover:bg-[#2C5F6F]/85 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#2C5F6F] focus:ring-offset-2 focus:ring-offset-[#FAF7F2]"
             >
               Book Your Assessment
             </a>
           </div>
         </div>
-
-        {/* Photo placeholder — right side */}
-        <div className="hidden md:block">
-          {/* TODO: replace with real photo of Tatjana */}
-          <div
-            className="aspect-[4/5] rounded-3xl bg-[#B8E0F7]/25 w-full max-w-md ml-auto opacity-0 overflow-hidden relative"
-            style={{ animation: "fadeIn 1s ease-out 0.8s forwards" }}
-            role="img"
-            aria-label="Photo of Tatjana Dunat, Nurse Practitioner and founder of Clarity ADHD"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#B8E0F7]/20 to-[#B8E0F7]/10" />
-          </div>
-        </div>
       </div>
+
+      {/* Bird — bottom right, gently floating */}
+      <div
+        className="absolute bottom-12 right-8 md:bottom-16 md:right-14 opacity-0"
+        style={{ animation: "fadeIn 1s ease-out 1.4s forwards" }}
+        aria-hidden="true"
+      >
+        <svg
+          width="52"
+          height="28"
+          viewBox="0 0 52 28"
+          fill="none"
+          style={{ animation: "float 5s ease-in-out infinite" }}
+        >
+          <path
+            d="M2 18 C9 7 16 13 21 10 C24 8 26 7 26 7 C26 7 28 8 31 10 C36 13 43 7 50 18"
+            stroke="#2C5F6F"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            opacity="0.55"
+          />
+        </svg>
+      </div>
+
     </section>
   );
 }
@@ -119,7 +144,7 @@ function ContrastBar() {
         </AnimateIn>
         <AnimateIn delay={160}>
           <div className="pl-4 md:pl-0">
-            <p className="font-serif text-4xl md:text-5xl text-[#B8E0F7] mb-3">
+            <p className="font-serif text-4xl md:text-5xl text-[#2C5F6F] mb-3">
               Within a week
             </p>
             <p className="text-xs md:text-sm text-[#6B7280] leading-relaxed max-w-[160px] mx-auto">
@@ -150,14 +175,14 @@ function WhoWeHelp() {
               href="/for-families"
               className="group block bg-[#FAF7F2] rounded-2xl p-8 md:p-10 hover:shadow-md transition-all duration-300"
             >
-              <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4 group-hover:text-[#B8E0F7] transition-colors duration-200">
+              <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4 group-hover:text-[#2C5F6F] transition-colors duration-200">
                 Families &amp; Kids
               </h3>
               <p className="text-[#6B7280] leading-relaxed text-[15px]">
                 From toddlers to teens, we understand how ADHD shows up at
                 every age. And we know how to talk to the whole family.
               </p>
-              <span className="inline-block mt-7 text-sm text-[#B8E0F7] font-medium">
+              <span className="inline-block mt-7 text-sm text-[#2C5F6F] font-medium">
                 Learn more →
               </span>
             </Link>
@@ -167,14 +192,14 @@ function WhoWeHelp() {
               href="/for-adults"
               className="group block bg-[#FAF7F2] rounded-2xl p-8 md:p-10 hover:shadow-md transition-all duration-300"
             >
-              <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4 group-hover:text-[#B8E0F7] transition-colors duration-200">
+              <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4 group-hover:text-[#2C5F6F] transition-colors duration-200">
                 Adults
               </h3>
               <p className="text-[#6B7280] leading-relaxed text-[15px]">
                 You&apos;ve probably been explaining yourself for years. You
                 shouldn&apos;t have to anymore.
               </p>
-              <span className="inline-block mt-7 text-sm text-[#B8E0F7] font-medium">
+              <span className="inline-block mt-7 text-sm text-[#2C5F6F] font-medium">
                 Learn more →
               </span>
             </Link>
@@ -205,7 +230,7 @@ function WhyClarity() {
           </p>
           <Link
             href="/our-story"
-            className="text-sm text-[#B8E0F7] font-medium hover:underline underline-offset-4"
+            className="text-sm text-[#2C5F6F] font-medium hover:underline underline-offset-4"
           >
             Read her story →
           </Link>
