@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #B8E0F7;
-  --color-accent: #B8E0F7;
+  --color-primary: #2C5F6F;
+  --color-accent: #A8D0E0;
   --color-bg: #FAF7F2;
   --color-bg-alt: #f2f2f0;
   --color-text: #1a1a1a;
@@ -38,5 +38,14 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
   }
 }
